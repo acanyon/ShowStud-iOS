@@ -1,23 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="SSViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Show Stud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-Tg-Cn4" userLabel="TitleName">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="userComments">
+                                    <fragment content="Helvetica Bold 36.0 pt.">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="toolTip"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOD-Ev-PtA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="X6f-Yl-hla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Default@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="ktc-e6-dzU">
+                                <color key="backgroundColor" red="1" green="0.94470821733106514" blue="0.36402852357174897" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Show Stud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55m-bS-yzu">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="3hY-kf-2aT"/>
+                                    <constraint firstAttribute="height" constant="78" id="aI1-A4-p8K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="34"/>
+                                <color key="textColor" red="0.99184169214061768" green="0.9588565708328961" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="0.99048083324574188" blue="0.40691848926677476" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-ef-qYg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="3Iv-bc-Cp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logIn:" destination="2" eventType="touchDown" id="ESE-Qc-eFP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XrJ-ef-qYg" secondAttribute="bottom" constant="44" id="1B1-TJ-daG"/>
+                            <constraint firstItem="ktc-e6-dzU" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-18" id="4nP-Mn-IjJ"/>
+                            <constraint firstItem="ktc-e6-dzU" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="B5q-Hj-ryc"/>
+                            <constraint firstItem="9oN-Tg-Cn4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="171" id="I8M-Ot-LMb"/>
+                            <constraint firstItem="55m-bS-yzu" firstAttribute="centerX" secondItem="9oN-Tg-Cn4" secondAttribute="centerX" type="default" id="LBj-n8-3Zj"/>
+                            <constraint firstItem="XrJ-ef-qYg" firstAttribute="centerX" secondItem="ktc-e6-dzU" secondAttribute="centerX" type="default" id="Lkd-eD-6yk"/>
+                            <constraint firstItem="55m-bS-yzu" firstAttribute="top" secondItem="3" secondAttribute="top" constant="73" id="Rqg-9d-h1k"/>
+                            <constraint firstAttribute="bottom" secondItem="dOD-Ev-PtA" secondAttribute="bottom" constant="215" id="Vvn-BX-72N"/>
+                            <constraint firstItem="dOD-Ev-PtA" firstAttribute="centerX" secondItem="XrJ-ef-qYg" secondAttribute="centerX" type="default" id="cQ4-tQ-lxw"/>
+                            <constraint firstItem="dOD-Ev-PtA" firstAttribute="centerX" secondItem="9oN-Tg-Cn4" secondAttribute="centerX" type="default" id="qMw-8p-IHA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fcP-X3-9bD">
+            <objects>
+                <viewController id="Z9u-3t-rSV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KyO-bu-Nb3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhf-nX-gBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="-291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Default@2x.png" width="320" height="570"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="logIn:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

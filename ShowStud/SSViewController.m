@@ -26,4 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)logIn:(id)sender
+{
+    NSLog(@"Logged in");
+}
 @end
