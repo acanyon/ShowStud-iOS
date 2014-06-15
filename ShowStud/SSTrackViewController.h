@@ -1,5 +1,5 @@
 //
-//  SSViewController.h
+//  SSTrackViewController.h
 //  ShowStud
 //
 //  Created by Amanda Canyon on 6/14/14.
@@ -10,11 +10,9 @@
 
 #import <AVFoundation/AVAudioPlayer.h>
 
-@interface SSViewController : UIViewController
+@interface SSTrackViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *tracks;
 @property (nonatomic, strong) AVAudioPlayer *player;
-
-- (IBAction)logIn:(id)sender;
-- (IBAction)playTrack:(id)sender;
 
 @end

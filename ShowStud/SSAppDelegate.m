@@ -8,7 +8,16 @@
 
 #import "SSAppDelegate.h"
 
+#import "SCUI.h"
+
 @implementation SSAppDelegate
+
++ (void)initialize;
+{
+    [SCSoundCloud  setClientID:@"23db025bb77050582169820faaeb6bab"
+                        secret:@"51d2e176dd4d28c8a8958259a577d43e"
+                   redirectURL:[NSURL URLWithString:@"ShowStud://soundcloud/auth"]];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
