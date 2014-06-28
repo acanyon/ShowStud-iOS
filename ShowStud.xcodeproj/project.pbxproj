@@ -16,6 +16,7 @@
 		071127F7194D1D0D00CA031D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071127F6194D1D0D00CA031D /* Default-568h@2x.png */; };
 		071127F9194D215000CA031D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071127F8194D215000CA031D /* AVFoundation.framework */; };
 		07112801194D2B5200CA031D /* SSTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07112800194D2B5200CA031D /* SSTrackViewController.m */; };
+		07112803194D5E1700CA031D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07112802194D5E1700CA031D /* AudioToolbox.framework */; };
 		07CC18C2194CFE08007D5701 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CC18C1194CFE08007D5701 /* UIKit.framework */; };
 		07CC18C4194CFE08007D5701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CC18C3194CFE08007D5701 /* Foundation.framework */; };
 		07CC18C6194CFE08007D5701 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CC18C5194CFE08007D5701 /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 		071127F8194D215000CA031D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		071127FF194D2B5200CA031D /* SSTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTrackViewController.h; sourceTree = "<group>"; };
 		07112800194D2B5200CA031D /* SSTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTrackViewController.m; sourceTree = "<group>"; };
+		07112802194D5E1700CA031D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		07CC18BE194CFE08007D5701 /* ShowStud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowStud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CC18C1194CFE08007D5701 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07CC18C3194CFE08007D5701 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07112803194D5E1700CA031D /* AudioToolbox.framework in Frameworks */,
 				071127F9194D215000CA031D /* AVFoundation.framework in Frameworks */,
 				071127E9194D186700CA031D /* QuartzCore.framework in Frameworks */,
 				071127E7194D184200CA031D /* AddressBookUI.framework in Frameworks */,
@@ -80,6 +83,7 @@
 		07CC18B5194CFE08007D5701 = {
 			isa = PBXGroup;
 			children = (
+				07112802194D5E1700CA031D /* AudioToolbox.framework */,
 				071127F8194D215000CA031D /* AVFoundation.framework */,
 				071127F6194D1D0D00CA031D /* Default-568h@2x.png */,
 				071127F4194D1D0600CA031D /* Default@2x.png */,

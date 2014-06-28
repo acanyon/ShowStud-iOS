@@ -75,7 +75,7 @@
     };
 
     [SCRequest performMethod:SCRequestMethodGET
-                  onResource:[NSURL URLWithString:@"https://api.soundcloud.com/users/494163/tracks.json"]
+                  onResource:[NSURL URLWithString:@"https://api.soundcloud.com/users/3994791/tracks.json"]
              usingParameters:nil
                  withAccount:account
       sendingProgressHandler:nil
